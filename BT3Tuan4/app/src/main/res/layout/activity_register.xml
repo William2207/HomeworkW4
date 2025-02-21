@@ -5,8 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:background="#e1d4c0">
+    tools:context=".RegisterActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -17,15 +16,15 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/login_background1" />
+        app:srcCompat="@drawable/reg_background2" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="100dp"
-        android:text="Welcome Back"
-        android:textColor="#e29422"
+        android:text="Create Account"
+        android:textColor="#13d5e8"
         android:textSize="40sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
@@ -34,12 +33,34 @@
         tools:layout_editor_absoluteY="270dp" />
 
     <EditText
+
+
+        android:id="@+id/editName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="280dp"
+        android:drawableStart="@drawable/name"
+        android:drawablePadding="8dp"
+        android:ems="10"
+        android:hint="Name"
+        android:inputType="text"
+        android:paddingStart="12dp"
+        android:paddingEnd="12dp"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <EditText
         android:id="@+id/editTextTextEmailAddress"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="284dp"
+        android:layout_marginBottom="208dp"
         android:drawableStart="@drawable/email"
         android:drawablePadding="8dp"
         android:ems="10"
@@ -51,7 +72,8 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editText" />
 
     <EditText
         android:id="@+id/editTextTextPassword2"
@@ -71,66 +93,30 @@
         app:layout_constraintEnd_toEndOf="@+id/editTextTextEmailAddress"
         app:layout_constraintStart_toStartOf="@+id/editTextTextEmailAddress"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextEmailAddress"
-        app:layout_constraintVertical_bias="0.073" />
+        app:layout_constraintVertical_bias="0.142" />
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="76dp"
-        android:layout_height="85dp"
+        android:layout_width="69dp"
+        android:layout_height="78dp"
         android:layout_marginStart="303dp"
         android:layout_marginEnd="32dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/login_btn_arraw1"
-        tools:layout_editor_absoluteY="533dp" />
-
-    <Button
-        android:id="@+id/btnFacebook"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:allCaps="false"
-        android:background="@drawable/bg_rounded_button"
-        android:drawableEnd="@drawable/facebook"
-        android:drawablePadding="8dp"
-
-        android:gravity="center"
-        android:paddingStart="24dp"
-        android:paddingEnd="25dp"
-        android:text="Facebook"
-        android:textColor="#3b5998"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="32dp"
-        tools:layout_editor_absoluteY="635dp" />
-
-    <Button
-        android:id="@+id/btnGoogle"
-        android:layout_width="wrap_content"
-        android:layout_height="50dp"
-        android:allCaps="false"
-        android:background="@drawable/bg_rounded_button"
-        android:drawableEnd="@drawable/google"
-        android:drawablePadding="8dp"
-
-        android:gravity="center"
-        android:paddingStart="24dp"
-        android:paddingEnd="25dp"
-        android:text="Google"
-        android:textColor="#3b5998"
-        android:textSize="16sp"
-        tools:layout_editor_absoluteX="225dp"
-        tools:layout_editor_absoluteY="635dp" />
+        app:srcCompat="@drawable/reg_btn_arrow2"
+        tools:layout_editor_absoluteY="599dp" />
 
     <TextView
 
-        android:id="@+id/register"
+        android:id="@+id/forgotPass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Are you know user? Register"
+        android:text="Forgot your password? Recover it"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:textStyle="bold"
-        android:textColor="#133ee8"/>
+        android:textColor="#133ee8"
+        android:textStyle="bold"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

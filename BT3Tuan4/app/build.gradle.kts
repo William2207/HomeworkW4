@@ -6,6 +6,10 @@ android {
     namespace = "com.example.bt3tuan4"
     compileSdk = 35
 
+    buildFeatures{
+        viewBinding = true
+    }
+
     defaultConfig {
         applicationId = "com.example.bt3tuan4"
         minSdk = 24
